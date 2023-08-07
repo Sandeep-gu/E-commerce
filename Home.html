@@ -10,6 +10,7 @@
 			crossorigin="anonymous"
 		/>
 		<script
+			defer
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 			crossorigin="anonymous"
@@ -22,7 +23,7 @@
 		<title>Ecommerce</title>
 	</head>
 	<body>
-		<header class="header1">
+		<header class="header1 py-2 position-sticky top-0">
 			<div class="container-fluid mt-2">
 				<div class="row">
 					<!--navbar creation-->
@@ -42,7 +43,6 @@
 								Search
 							</button>
 						</form>
-
 						<!--login creation-->
 					</div>
 					<div class="col-sm-3 d-flex">
@@ -56,125 +56,103 @@
 					</div>
 				</div>
 			</div>
-		</header>
-		<header class="header2">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<!-- Container wrapper -->
-				<div class="container-fluid">
-					<!-- Toggle button -->
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-mdb-toggle="collapse"
-						data-mdb-target="#navbarCenteredExample"
-						aria-controls="navbarCenteredExample"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<i class="fas fa-bars"></i>
-					</button>
-
-					<!-- Collapsible wrapper -->
-					<div
-						class="collapse navbar-collapse justify-content-center"
-						id="navbarCenteredExample"
-					>
-						<!-- Left links -->
-						<ul class="navbar-nav mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#"
-									>Home</a
-								>
+			<div
+				class="text-white bg-secondary d-flex justify-content-center py-2"
+			>
+				<!-- Left links -->
+				<ul
+					class="d-flex mb-2 mb-lg-0 w-75 justify-content-center flex-wrap gap-3 list-unstyled"
+				>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#"
+							>Home</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<!-- Navbar dropdown women -->
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdown"
+							role="button"
+							data-mdb-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Women
+						</a>
+						<!-- Dropdown menu -->
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">All</a></li>
+							<li>
+								<a class="dropdown-item" href="#">Dresses</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
+							<li>
+								<a class="dropdown-item" href="#">Pant</a>
 							</li>
-							<!-- Navbar dropdown women -->
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									id="navbarDropdown"
-									role="button"
-									data-mdb-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Women
-								</a>
-								<!-- Dropdown menu -->
-								<ul
-									class="dropdown-menu"
-									aria-labelledby="navbarDropdown"
-								>
-									<li><a class="dropdown-item" href="#">All</a></li>
-									<li>
-										<a class="dropdown-item" href="#">Dresses</a>
-									</li>
-
-									<li>
-										<a class="dropdown-item" href="#">Pant</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">Skirt</a>
-									</li>
-								</ul>
-							</li>
-							<!-- Navbar dropdown men -->
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									id="navbarDropdown1"
-									role="button"
-									data-mdb-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Men
-								</a>
-								<!-- Dropdown menu men -->
-								<ul
-									class="dropdown-menu"
-									aria-labelledby="navbarDropdown1"
-								>
-									<li><a class="dropdown-item" href="#">All</a></li>
-									<li>
-										<a class="dropdown-item" href="#">Dresses</a>
-									</li>
-
-									<li>
-										<a class="dropdown-item" href="#">Pant</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">Shirt</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="#"
-									tabindex="-1"
-									aria-disabled="true"
-									>Kids</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="#"
-									tabindex="-1"
-									aria-disabled="true"
-									>Contact</a
-								>
+							<li>
+								<a class="dropdown-item" href="#">Skirt</a>
 							</li>
 						</ul>
-						<!-- Left links -->
-					</div>
-					<!-- Collapsible wrapper -->
-				</div>
-				<!-- Container wrapper -->
-			</nav>
+					</li>
+					<!-- Navbar dropdown men -->
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdown1"
+							role="button"
+							data-mdb-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Men
+						</a>
+						<!-- Dropdown menu men -->
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+							<li><a class="dropdown-item" href="#">All</a></li>
+							<li>
+								<a class="dropdown-item" href="#">Dresses</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">Pant</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">Shirt</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="#"
+							tabindex="-1"
+							aria-disabled="true"
+							>Kids</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="#"
+							tabindex="-1"
+							aria-disabled="true"
+							>Contact</a
+						>
+					</li>
+				</ul>
+				<!-- Left links -->
+			</div>
 		</header>
+
+		<!-- Container wrapper -->
+		<!-- Toggle button -->
+
+		<!-- Collapsible wrapper -->
+
+		<!-- Collapsible wrapper -->
+		<!-- Container wrapper -->
 
 		<div class="ecommerce">
 			<p class="ecommercefont">Ecommerce</p>
