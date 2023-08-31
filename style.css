@@ -13,7 +13,7 @@ h2 {
 	color: white;
 }
 .container-fluid{
-	background-color: #ffae00;
+	
 	height:fit-content;
 	margin-bottom: 100px;
 }
@@ -73,6 +73,10 @@ footer{
 	border-color: white;
 	
 }
+.disabled {
+	pointer-events: none;
+	opacity: 0.3;
+  }
 li:hover{
 	background-color:white;
 }
